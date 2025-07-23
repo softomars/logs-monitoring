@@ -21,9 +21,13 @@ php main.php --input=/path/to/logs.log --output=/path/to/report.log
 ```
 For input and output file examples check logs.log and output.log
 
+If you wish to log both Warning and Error when Error level is reached then return false in shouldBreak inside ErrorHandler
 ## Future improvements
 
+- Input file validation
+- Sorting the output report lines
+- Improve directory structure (Models,Services)
 - Unit testing
 - Use composer autoload
 - Use getter methods rather than accessing public properties
-- Technical documentation 
+- Technical documentation
