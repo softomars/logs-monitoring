@@ -19,6 +19,7 @@ Access index.php or run the following command
 ```bash
 php main.php --input=/path/to/logs.log --output=/path/to/report.log
 ```
+For input and output file examples check logs.log and output.log
 
 ## Future improvements
 
