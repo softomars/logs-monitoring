@@ -1,10 +1,12 @@
 <?php
 spl_autoload_register(function($className)
 {
-    $namespace=str_replace("\\", "/", __NAMESPACE__);
-    $className=str_replace("\\", "/", $className);
-    $class= __DIR__ . DIRECTORY_SEPARATOR . (empty($namespace) ? "" : $namespace . "/") . "{$className}.php";
-    include_once($class);
+    $className = str_replace('\\', '/', $className);
+    $classPath = __DIR__ . '/' . $className . '.php';
+
+    if (file_exists($classPath)) {
+        include_once $classPath;
+    }
 });
 
 use Monitor\LogMonitorCommand;
