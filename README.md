@@ -15,7 +15,7 @@ A CLI-based log monitoring tool built with PHP using solid OOP principles. It pr
 
 ## Usage
 
-Access index.php or run the following command
+Access index.php (after modifying the input and output paths) or run the following command
 ```bash
 php main.php --input=/path/to/logs.log --output=/path/to/report.log
 ```
